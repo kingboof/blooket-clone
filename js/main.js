@@ -2,7 +2,7 @@ function setup() {
     // Create canvas & images
     createCanvas(windowWidth, windowHeight);
     loadImage('../assets/floortile.jpg', img => {
-        image(img, 0, 0);
+        image(img, 0, 0, windowWidth, windowHeight);
     });
     
 }
