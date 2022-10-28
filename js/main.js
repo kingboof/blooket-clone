@@ -1,12 +1,17 @@
 function setup() {
+    // Create canvas & images
     createCanvas(windowWidth, windowHeight);
+    loadImage('../assets/floortile.jpg', img => {
+        image(img, 0, 0);
+    });
+    
 }
 
 function draw() {
-    background(255);
-    text("put your p5.js code here",10, frameCount % height);
+
 }
 
 function windowResized() {
+    // Resize the game when the size of the window is changed
     resizeCanvas(windowWidth, windowHeight);
 }
