@@ -17,5 +17,5 @@ function windowResized() {
 function createMap(image_to_display) {
     this.img = image_to_display;
     this.img.resize(100,100)
-    
+    alert(this.img)
   }
